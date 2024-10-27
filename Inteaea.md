@@ -8,4 +8,4 @@ More commands to come really for NotSoBot, some include useful ones. Who knows w
 
 # Inteaea Status
 
-Inteaea is currently in it's beta, you can install it with ".t add inteaea3 {eval:{text:https://https://raw.githubusercontent.com/auroraaawhattt/inteaeaversion/refs/heads/main/inteaea }}" via the NotSoBot bot.
+Inteaea is currently in it's beta, you can install it with ".t add inteaea {eval:{text:https://https://raw.githubusercontent.com/auroraaawhattt/inteaeaversion/refs/heads/main/inteaea }}" via the NotSoBot bot.
