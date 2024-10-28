@@ -1,4 +1,4 @@
-{set:version|0.1}
+.t add Inteaea {set:version|0.1}
 {set:codename|Pepper} *Inteaea v{get:version} Loaded | Codename: {get:codename} *
 
 **Inteaea is built with Python, and NotSoBot
@@ -11,7 +11,7 @@ and has a nice background, sip some tea!**
 import random
 import requests
 
-commandlist = ['help', 'welcome', 'fakeip', 'hi']
+commandlist = ['help', 'welcome', 'fakeip', 'getipinfo', 'source']
 if '{arg:0}' not in commandlist:
        print("Error; no such command.")
 else:
@@ -41,13 +41,23 @@ else:
 if "{args}" == "help":
       for item in commandlist:
             print(item)
-if "{arg:0}" == "hi":
-            print("{arg:1}")
+if "{args}" == "source":
+    srclink = "https://raw.githubusercontent.com/auroraaawhattt/inteaeaversion/refs/heads/main/inteaea"
+    print("You can check the source here;", srclink)
+if "{arg:0}" == "getipinfo":
+        ip_address = "{arg:1}"
+        url = f'https://ipapi.co/' + ip_address + '/json/'
+        response = requests.get(url).json()
+        print(
+"IP;", ip_address,
+"| "
+"City;", response.get("city"), 
+"|", 
+"Region;", response.get("region"), 
+"|",
+"Country;", response.get("country_name"),
+"|",
+"ORG;", response.get("org")
+              )
 }"*```Inteaea {get:version}; {get:codename}```
-{python:
-latest_ver = {eval:{text:https://raw.githubusercontent.com/auroraaawhattt/inteaeaversion/refs/heads/main/latestver.txt }}
-if {get:version} != latest_ver:
-        print("**Not current version; new version is**", latest_ver, "**instructions on how to get the latest ver, right [here.](https://github.com/auroraaawhattt/inteaeaversion/blob/main/Inteaea.md)**")
-else:
-        print("**Version; current**")
-}
+{eval:{text:https://bit.ly/inteaea-versionchecker }}
