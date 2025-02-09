@@ -2,7 +2,6 @@
 {set:codename|Pepper} *Inteaea v{get:version} Loaded | Codename: {get:codename} *
 
 **Inteaea is backed by and built with Python, and NotSoBot**
-*Looking for help? do .t inteaea help*
 
 *Output:
 "{python:
@@ -13,7 +12,7 @@ import requests
 
 commandlist = ['help', 'welcome', 'fakeip', 'getipinfo', 'source']
 if '{arg:0}' not in commandlist:
-       print("Error; no such command.")
+       print("Error; no such command. (.t inteaea help)")
 else:
 # commands
    if "{args}" == "welcome":
