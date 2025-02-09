@@ -1,8 +1,7 @@
 .t add Inteaea {set:version|0.1}
 {set:codename|Pepper} *Inteaea v{get:version} Loaded | Codename: {get:codename} *
 
-**Inteaea is built with Python, and NotSoBot
-and has a nice background, sip some tea!**
+**Inteaea is backed by and built with Python, and NotSoBot**
 
 *Output:
 "{python:
