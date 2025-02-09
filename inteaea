@@ -2,6 +2,7 @@
 {set:codename|Pepper} *Inteaea v{get:version} Loaded | Codename: {get:codename} *
 
 **Inteaea is backed by and built with Python, and NotSoBot**
+*Looking for help? do .t inteaea help*
 
 *Output:
 "{python:
@@ -37,7 +38,7 @@ else:
 "|",
 "ORG;", response.get("org")
               )
-if "{args}" == "help":
+if "{args}" == "":
       for item in commandlist:
             print(item)
 if "{args}" == "source":
