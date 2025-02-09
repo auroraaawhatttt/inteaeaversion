@@ -37,7 +37,7 @@ else:
 "|",
 "ORG;", response.get("org")
               )
-if "{args}" == "":
+if "{args}" == "help":
       for item in commandlist:
             print(item)
 if "{args}" == "source":
