@@ -41,7 +41,7 @@ if "{args}" == "help":
       for item in commandlist:
             print(item)
 if "{args}" == "source":
-    srclink = "https://raw.githubusercontent.com/auroraaawhattt/inteaeaversion/refs/heads/main/inteaea"
+    srclink = "https://raw.githubusercontent.com/auroraaawhatttt/inteaeaversion/refs/heads/main/inteaea"
     print("You can check the source here;", srclink)
 if "{arg:0}" == "getipinfo":
         ip_address = "{arg:1}"
