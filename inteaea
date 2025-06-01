@@ -16,7 +16,7 @@ if '{arg:0}' not in commandlist:
 else:
 # commands
    if "{args}" == "welcome":
-       print("Welcome to Inteaea! This is only the beginning, friend. :)")
+       print("Welcome to Inteaea! This is only the beginning friend. :D")
    if "{args}" == "fakeip":
         def generate_random_ip():
                return '.'.join(
