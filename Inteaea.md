@@ -1,6 +1,6 @@
 # What is Inteaea?
 
-Inteaea is something I made because I was bored while experiencing with NotSoBot, it will run on it's own website soon--if I get money, it will also be open-source. (You can make your own versions for fun! J-just don't be a skid.
+Inteaea is something I made because I was bored while experiencing with NotSoBot.
 
 # Inteaea's Purpose?
 
