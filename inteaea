@@ -1,4 +1,4 @@
-{set:version|0.1}
+.t add inteaea {set:version|0.1}
 {set:codename|Pepper} *Inteaea v{get:version} Loaded | Codename: {get:codename} *
 
 **Inteaea is coded with Python, and NotSoBot's Tag Scripting.**
@@ -9,6 +9,13 @@
 # important modules
 import random
 import requests
+
+userid = 0
+if userid == 0:
+    global globalusers
+    globalusers +=1
+    userid = globalusers
+    print("Welcome to Inteaea! You are User#", userid, ".")
 
 commandlist = ['help', 'welcome', 'fakeip', 'getipinfo', 'source']
 if '{arg:0}' not in commandlist:
@@ -47,16 +54,20 @@ if "{arg:0}" == "getipinfo":
         ip_address = "{arg:1}"
         url = f'https://ipapi.co/' + ip_address + '/json/'
         response = requests.get(url).json()
-        print(
-"IP;", ip_address,
-"| "
-"City;", response.get("city"), 
-"|", 
-"Region;", response.get("region"), 
-"|",
-"Country;", response.get("country_name"),
-"|",
-"ORG;", response.get("org")
-              )
+        city = response.get("city")
+        region = response.get("region")
+        country_name = response.get("country_name")
+        org = response.get("org")
+
+        if city == None or region == None or country_name == None or org == None
+              print("uh oh")
+        else:
+              print(
+                     "IP;", ip_address,
+                     "| City;", city, 
+                     "| Region;", region, 
+                     "| Country;", country_name,
+                     "| Org;", org   
+       )
 }"*```Inteaea {get:version}; {get:codename}```
 {eval:{text:https://bit.ly/inteaea-versionchecker }}
