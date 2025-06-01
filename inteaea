@@ -53,7 +53,7 @@ if "{arg:0}" == "getipinfo":
         org = response.get("org")
 
         if city == None or region == None or country_name == None or org == None:
-              print("uh oh")
+              print("uh oh ", response)
         else:
               print(
                      "IP;", ip_address,
