@@ -10,13 +10,6 @@
 import random
 import requests
 
-userid = 0
-if userid == 0:
-    global globalusers
-    globalusers +=1
-    userid = globalusers
-    print("Welcome to Inteaea! You are User#", userid, ".")
-
 commandlist = ['help', 'welcome', 'fakeip', 'getipinfo', 'source']
 if '{arg:0}' not in commandlist:
        print("Error; no such command. (.t inteaea help)")
@@ -59,7 +52,7 @@ if "{arg:0}" == "getipinfo":
         country_name = response.get("country_name")
         org = response.get("org")
 
-        if city == None or region == None or country_name == None or org == None
+        if city == None or region == None or country_name == None or org == None:
               print("uh oh")
         else:
               print(
