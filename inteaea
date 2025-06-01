@@ -10,7 +10,7 @@
 import random
 import requests
 
-globalusers = globalusers
+globalusers = 0
 if userid == 0:
     globalusers +=1
     userid = globalusers
