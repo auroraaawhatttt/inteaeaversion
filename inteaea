@@ -10,6 +10,12 @@
 import random
 import requests
 
+globalusers = globalusers
+if userid == 0:
+    globalusers +=1
+    userid = globalusers
+    print("Welcome to Inteaea! You are User#", userid, ".")
+
 commandlist = ['help', 'welcome', 'fakeip', 'getipinfo', 'source']
 if '{arg:0}' not in commandlist:
        print("Error; no such command. (.t inteaea help)")
