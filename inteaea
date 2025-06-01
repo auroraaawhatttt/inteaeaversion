@@ -27,15 +27,11 @@ else:
         url = f'https://ipapi.co/' + ip_address + '/json/'
         response = requests.get(url).json()
         print(
-"IP;", ip_address,
-"| "
-"City;", response.get("city"), 
-"|", 
-"Region;", response.get("region"), 
-"|",
-"Country;", response.get("country_name"),
-"|",
-"ORG;", response.get("org")
+                     "IP;", ip_address,
+                     "| City;", city, 
+                     "| Region;", region, 
+                     "| Country;", country_name,
+                     "| Org;", org   
               )
 if "{args}" == "help":
       for item in commandlist:
