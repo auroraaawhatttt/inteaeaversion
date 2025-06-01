@@ -3,5 +3,5 @@ latest_ver = {eval:{text:https://raw.githubusercontent.com/auroraaawhattt/inteae
 if {get:version} != latest_ver:
         print("**Not current version; new version is**", latest_ver, "**instructions on how to get the latest ver, right [here.](https://github.com/auroraaawhattt/inteaeaversion/blob/main/Inteaea.md)**")
 else:
-        print("**Version; current**")
+        print("**Running on the current version!**")
 }
